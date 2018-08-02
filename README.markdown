@@ -1,4 +1,4 @@
-Simple program to fill all RTP media payload data with 0xff to protect privacy.
+Simple program to fill all RTP media payload data in a pcap with 0xff to protect privacy.
 
 Depends on libpcap.
 
