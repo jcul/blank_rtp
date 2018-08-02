@@ -1,0 +1,11 @@
+Simple program to fill all RTP media payload data with 0xff to protect privacy.
+
+Depends on libpcap.
+
+To build just run make.
+
+Usage: ./blank_rtp in.pcap out.pcap
+
+Note: The checks on the RTP are weak so it could easily mistake some other UDP
+protocol as RTP, so it would be better to run on a pcap that has just RTP and merge
+later. SIP with RTP should be safe as SIP is ascii.
